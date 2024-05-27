@@ -11,23 +11,29 @@
     <!--Collegamento a css-->
 
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
 </head>
 <body>
     <header>
-
         
            <!-- Menù a tendina -->
 
-           <div class="off-screen-menu">
+           <nav class="off-screen-menu"> 
+
+            <a class="imgcontainer" href=""><img src="poincarè.png" alt="Tassellatura del disco di Poincaré" style="width: 20%; height: auto;"></a>
+            
             <ul>
-                <li>Home</li>
-                <li>Deformazione dello spazio</li>
-                <li>Geometrie non euclidee</li>
+                <li><a href="index.html"><p>Home</p></a></li>
+                <hr>
+                <li><a href="Curvatura spazio-tempo.html"><p>Curvatura dello spazio-tempo</p></a></li>
+                <hr>
+                <li><a href="Spazi non euclidei.html"><p>Costruzione spazi non euclidei</p></a></li>
             </ul>
-           </div>
+        </nav>
 
         <nav>
+            <h1> Lavoro Mate<sup>Info<sub>Fis</sub></sup></h1>
             <div class= "ham-menu">
                 <span></span>
                 <span></span>
@@ -39,37 +45,29 @@
         
 
         <!--Menù classico da eliminare-->
-
-        <h1>Curvatura dello Spazio-Tempo</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="file1.html">Introduzione</a></li>
-                <li><a href="#">Teoria della Relatività</a></li>
-                <li><a href="#">Applicazioni</a></li>
-                <li><a href="#">Contatti</a></li>
-            </ul>
-        </nav>
-
-
-
+        
     </header>
 
 
     <!--Finestre a scorrimento-->
 
     <main class="box">
-        <section class="box">
-            <h2>Introduzione</h2>
+        <section class="box" id="box1" onclick="allungabox('box1')">
+         <div class="pippo">   <h2>Introduzione</h2>
             <p>La curvatura dello spazio-tempo è un concetto fondamentale nella teoria della relatività generale di Albert Einstein. Secondo questa teoria, la presenza di massa e energia curva lo spazio e il tempo intorno ad essa, influenzando il moto degli oggetti.</p>
+        </div>
         </section>
-        <section class="box">
+        <section class="box" id="box2" onclick="allungabox('box2')">
+            <div class="pippo">
             <h2>Teoria della Relatività</h2>
             <p>La teoria della relatività generale è una teoria fisica sviluppata da Albert Einstein che descrive la gravità come una curvatura dello spazio-tempo causata dalla massa ed energia. Questa teoria ha importanti implicazioni nella nostra comprensione dell'universo.</p>
+        </div>
         </section>
-        <section class="box">
+        <section class="box" id="box3" onclick="allungabox('box3')">
+            <div class="pippo">
             <h2>Applicazioni</h2>
             <p>La curvatura dello spazio-tempo ha numerose applicazioni pratiche, come la predizione dell'esistenza dei buchi neri, la descrizione della gravità nei sistemi cosmologici e la spiegazione della lente gravitazionale.</p>
+            </div>
         </section>
     </main>
 

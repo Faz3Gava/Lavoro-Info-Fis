@@ -32,3 +32,10 @@ hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('off-screen-menu-active');
 })
+
+function allungabox(selectbox){
+    var sbox = document.getElementById(selectbox);
+    sbox.classList.toggle('active');
+    console.log(selectbox);
+
+}
